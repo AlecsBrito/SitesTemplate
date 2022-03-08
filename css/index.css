@@ -1,0 +1,177 @@
+:root {
+  --color1: #FFE298;
+  --color2: #FFCE8F;
+	--color3: #EB9F71;
+  --color4: #DA8B5B;
+  --color5: #D0795E;
+  --color6: #AC5656;
+}
+
+*:focus {
+  outline: none;
+}
+
+body {
+  background: var(--color6);
+  font-family: Arial, Helvetica, sans-serif;
+	color: var(--color2);
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.container {
+  margin: 2.5%;
+
+	display: flex;
+	flex-direction: column;
+	gap: 29px;
+}
+
+
+/* NAVBAR */
+.navbar {
+  background: var(--color5);
+  width: 100%;
+  height: 85px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar ul {
+  list-style: none;
+
+  display: flex;
+  justify-content: center;
+}
+
+.navbar ul a {
+  width: 250px;
+  height: 85px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bolder;
+  font-size: 15px;
+	color: var(--color2);
+
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+}
+
+.navbar ul a:hover {
+  background: var(--color3);
+	text-decoration: underline 5px;
+}
+
+
+/* DISPLAY */
+.display {
+	height: 267px;
+	background: var(--color5);
+
+	display: flex;
+	flex-direction: row;
+	gap: 2vw;
+}
+
+.display .text {
+	width: 35vw;
+	padding-left: 65px;
+	text-align: justify;
+
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.display .img {
+	width: 60vw;
+	background: var(--color3);
+	border-radius: 155px 0 0 155px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+/* BOXES */
+.boxes {
+	min-height: 74.4vh;
+
+	display: flex;
+	flex-direction: row;
+	gap: 29px;
+}
+
+.box1 {
+	background: var(--color5);
+	width: 106.933vw;
+	padding: 81px 65px;
+
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.box1 .mix {
+	text-align: justify;
+
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	gap: 12px;
+}
+
+.box1 .mix .img {
+	background: var(--color2);
+	min-width: 203px;
+	max-width: 203px;
+	min-height: 183px;
+	max-height: 183px;
+}
+
+.box2 {
+	background: var(--color5);
+	width: 68.4vw;
+	text-align: justify;
+
+	display: flex;
+	flex-direction: column;
+	gap: 14px;
+}
+
+.box2 .text {
+	background: rgb(235, 159, 113, 0.3);
+	padding: 15px 28px;
+	height: 115px;
+
+	display: flex;
+	align-items: center;
+}
+
+
+/* FOOTER */
+.footer {
+	background: var(--color5);
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.footer .contact {
+	width: 20vw;
+	height: 20vh;
+	text-align: center;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
